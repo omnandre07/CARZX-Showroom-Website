@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - CARZX</title>
+  <style>
+    
+
+    body {
+      background: url('https://wallpaperaccess.com/full/1125056.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f1f1f1;
+       font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background: black;
+       box-sizing: border-box;
+      
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 45px;
+      margin-right: 10px;
+    }
+
+    .nav-left h1 {
+      font-size: 24px;
+      font-weight: bold;
+      color: darkorange;
+      margin: 0;
+    }
+
+    .nav-right a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .nav-right a:hover {
+      color: darkorange;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 120px auto 60px auto;
+      background: #1a1a1a;
+      display: flex;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .contact-form {
+      flex: 2;
+      padding: 40px 30px;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+      color: darkorange;
+    }
+
+    .contact-form p {
+      font-size: 14px;
+      color: #bbb;
+      margin-bottom: 25px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      background: #222;
+      border: none;
+      border-bottom: 2px solid #444;
+      color: #fff;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+      color: #aaa;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background: darkorange;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: orangered;
+    }
+
+    .contact-info {
+      flex: 1;
+      background: #000;
+      color: white;
+      padding: 30px;
+      position: relative;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: darkorange;
+    }
+
+    .contact-info p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .side-color {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      background: darkorange;
+    }
+
+    
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <div class="nav-left">
+      <img src="https://static.vecteezy.com/system/resources/previews/020/500/684/non_2x/mclaren-brand-symbol-logo-orange-design-british-car-automobile-illustration-with-black-background-free-vector.jpg" alt="Logo">
+      <h1>CARZX</h1>
+    </div>
+    <div class="nav-right">
+      <a href="#home">Home</a>
+      <a href="about.html">About</a>
+      <a href="#brands">Brands</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="contact-form">
+      <h2>Contact CARZX</h2>
+      <p>Feel free to contact us any time. We will get back to you as soon as we can!</p>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Your message (optional)"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Contact Info</h3>
+      <p>Phone: +91 77103-66313</p>
+      <p>Email: contact@carzx.in</p>
+      <p>Address: CARZX HQ, Mg Road,Pune ,Maharashta, India (Pin: 402001)</p>
+      <div class="side-color"></div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CARZX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background: url('https://wallpaperaccess.com/full/1125056.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        nav {
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            background: black;
+            
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-left img {
+            height: 45px;
+            margin-right: 10px;
+        }
+
+        .nav-left h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: darkorange;
+            margin: 0;
+        }
+
+        .nav-right a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-right a:hover {
+            color: darkorange;
+        }
+
+        .welcome {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .welcome-content {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 600px;
+        }
+
+        .welcome h1 {
+            font-size: 55px;
+            font-weight: 700;
+        }
+
+        .welcome span {
+            color: darkorange;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        .highlight-box {
+    font-size: 20px;
+    color: darkorange;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid darkorange;
+    backdrop-filter: blur(5px);
+    margin: 10px 0;
+}
+        
+
+        .brands-section, .cars-section {
+            background: #000;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .brands-section h2, .cars-section h2 {
+            margin-bottom: 40px;
+            font-size: 32px;
+            color: darkorange;
+        }
+
+        .brand-cards, .car-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .brand-card, .car-card {
+            background: white;
+            color: black;
+            border-radius: 10px;
+            padding: 20px;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-card:hover, .car-card:hover {
+            transform: scale(1.05);
+        }
+
+        .brand-card img, .car-card img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .car-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .brand-view-btn {
+            display: inline-block;
+            background: darkorange;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .brand-view-btn:hover {
+            background: red;
+        }
+
+        .view-more-btn {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            margin-top: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .view-more-btn:hover {
+            background: darkorange;
+            color: black;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.95);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: darkorange;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <img src="https://static.vecteezy.com/system/resources/previews/020/500/684/non_2x/mclaren-brand-symbol-logo-orange-design-british-car-automobile-illustration-with-black-background-free-vector.jpg" alt="Logo">
+            <h1>CARZX</h1>
+        </div>
+        <div class="nav-right">
+            <a href="#home">Home</a>
+            <a href="about.html">About</a>
+            <a href="#brands">Brands</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="welcome" id="home">
+        <div class="welcome-content">
+            <h1>Welcome to <span>CARZX</span></h1>
+            <p>One Of The Biggest Indian Car Showrooms</p>
+           <p class="highlight-box">Explore the luxury you deserve.</p>
+           
+        </div>
+    </div>
+
+    <div class="brands-section" id="brands">
+        <h2>Our Brands</h2>
+        <div class="brand-cards">
+            <div class="brand-card">
+                <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/ferrarilogo.png" alt="Ferrari">
+                <h3>Ferrari</h3>
+                <a href="ferrari.html" class="brand-view-btn">View</a>
+            </div>
+            <div class="brand-card">
+                <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/lamborghini.png" alt="Lamborghini">
+                <h3>Lamborghini</h3>
+                <a href="lamborghini.html" class="brand-view-btn">View</a>
+            </div>
+            <div class="brand-card">
+                <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/bmw.png" alt="BMW">
+                <h3>BMW</h3>
+                <a href="bmw.html" class="brand-view-btn">View</a>
+            </div>
+            <div class="brand-card">
+                <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/audi.png" alt="Audi">
+                <h3>Audi</h3>
+                <a href="audi.html" class="brand-view-btn">View</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cars-section">
+        <h2>Top Picks Exclusive Cars</h2>
+        <div class="car-cards">
+            <div class="car-card">
+                <img src="https://cdn.luxe.digital/media/20240423160829/most-popular-luxury-car-brands-2024-mercedes-benz-luxe-digital.jpg.webp" alt="Mercedes Benz">
+                <h3>Mercedes Benz</h3>
+            </div>
+            <div class="car-card">
+                <img src="https://cdn.luxe.digital/media/20240423160811/most-popular-luxury-car-brands-2024-land-rover-luxe-digital.jpg.webp" alt="Land Rover">
+                <h3>Land Rover</h3>
+            </div>
+            <div class="car-card">
+                <img src="https://www.bmw.in/content/dam/bmw/common/topics/offers-and-services/bmw-special-sales-2020/protection-vehicle/bmw-css-7-series-protection-ms-new-standard.jpg" alt="BMW 7 Series">
+                <h3>BMW 7 Series</h3>
+            </div>
+            <div class="car-card">
+                <img src="https://cdn.luxe.digital/media/20240423160848/most-popular-luxury-car-brands-2024-tesla-luxe-digital.jpg.webp" alt="Tesla Cybertruck">
+                <h3>Tesla Cybertruck</h3>
+            </div>
+        </div>
+        <a href="top.html" class="view-more-btn">View More Top Cars</a>
+    </div>
+
+    <div class="cars-section">
+        <h2>Our Premium Collection</h2>
+        <div class="car-cards">
+            <div class="car-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2024-rolls-royce-spectre-183-671fa78bc29e8.jpg" alt="Rolls-Royce Spectre">
+                <h3>Rolls-Royce Spectre</h3>
+            </div>
+            <div class="car-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2025-alfa-romeo-giulia-tributo-italiano-107-670ffebaad073.jpg" alt="Alfa Romeo Giulia">
+                <h3>Alfa Romeo Giulia</h3>
+            </div>
+            <div class="car-card">
+                <img src="https://cdn.luxe.digital/media/20240423160805/most-popular-luxury-car-brands-2024-lamborghini-luxe-digital.jpg.webp" alt="Lamborghini Revuelto">
+                <h3>Lamborghini Revuelto</h3>
+            </div>
+            <div class="car-card">
+                <img src="https://cdn.luxe.digital/media/20240423160835/most-popular-luxury-car-brands-2024-porsche-luxe-digital.jpg.webp" alt="Porsche Cayenne">
+                <h3>Porsche Cayenne</h3>
+            </div>
+        </div>
+        <a href="prem.html" class="view-more-btn">View More Premium Cars</a>
+    </div>
+
+    <footer id="contact">
+        <p>&copy; 2025 CARZX. All rights reserved.</p>
+        <p>Designed by Om Nandre | <a href="mailto:carzx@gmail.com">carzx@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
