@@ -29,10 +29,15 @@ It is built to demonstrate strong front-end development skills, clean UI design,
 ![Preview](cpreview/Screenshot%202025-11-27%20021237.png)
 ![Preview](cpreview/Screenshot%202025-11-27%20021255.png)
 
-👨‍💻 Author
+##👨‍💻 Author
 
 Om VInod Nandre
 
 GitHub: https://github.com/omnandre07
 
 LinkedIn: https://www.linkedin.com/in/om-nandre-0b8569397/
+
+---
+##⭐ Show Support
+
+If you found this project helpful or inspiring, consider giving it a ⭐ star on GitHub!
